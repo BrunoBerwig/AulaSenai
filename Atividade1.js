@@ -1,17 +1,18 @@
 class Veiculo{
-    constructor (tipo, marca, cor, velocidade, passageiros){
+    constructor (tipo, ano, marca, cor, velocidade = 0, passageiros = []){
         this.tipo = tipo;
+        this.ano = ano;
         this.marca = marca;
         this.cor = cor;
         this.velocidade = velocidade;
-        this.passageiros = passageiros;
+        this.passageiros = passageiros
     }
 }
 const carro = new Veiculo(
-    '',
-    'BMW',
+    'SUV',
+    2020,
+    'Renault',
     'Azul',
-    100,
-    2
+    
 )
 console.log(carro)
