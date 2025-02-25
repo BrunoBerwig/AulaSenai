@@ -7,6 +7,15 @@ class Veiculo{
         this.velocidade = velocidade;
         this.passageiros = passageiros
     }
+    acelerar = function(){
+        this.velocidade += 10
+        console.log('A velocidade atual é', this.velocidade)
+    }
+
+    freiar = function(){
+        this.velocidade -= 10
+        console.log('A velocidade atual é', this.velocidade)
+    }
 }
 const carro = new Veiculo(
     'SUV',
@@ -16,3 +25,6 @@ const carro = new Veiculo(
     
 )
 console.log(carro)
+carro.acelerar()
+console.log(carro)
+carro.freiar()
